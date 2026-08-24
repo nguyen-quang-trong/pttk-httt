@@ -69,13 +69,13 @@ function vexuly(stt,x,y,r,nd){
         stroke:"black"
     });
     taosvg("line",{
-        x1:x-r+15,
-        y1:y-40,
-        x2:x+r-15,
-        y2:y-40,
+        x1:x-Math.sqrt(r*r-((r*0.75)*(r*0.75))),
+        y1:y-r*0.75,
+        x2:x+Math.sqrt(r*r-((r*0.75)*(r*0.75))),
+        y2:y-r*0.75,
         stroke:"black"
     });
-    vechu(x,y-43,stt);
+    vechu(x,y-r*0.75-5,stt);
     vechu(x,y+5,nd);
 }
 
@@ -97,7 +97,7 @@ function vekhodulieu(x,y,cd,nd){
     vechu(x+cd/2,y+23,nd);
 }
 function veluong(loai,x1,y1,x2,y2,nd){
-    var mt;
+    var mtp,mtt;
     if(loai==0) {
         mtp="url(#arrowr)";
         mtt="null";
@@ -121,4 +121,3 @@ function veluong(loai,x1,y1,x2,y2,nd){
     });
     vechu((x1+x2)/2,(y1+y2)/2-8,nd);
 }
-
