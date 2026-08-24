@@ -60,7 +60,7 @@ function vehcn(x,y,cd,cr,nd){
     vechu(x+cd/2,y+cr/2+5,nd);
 }
 
-function vexuly(x,y,r,nd){
+function vexuly(stt,x,y,r,nd){
     taosvg("circle",{
         cx:x,
         cy:y,
@@ -75,7 +75,7 @@ function vexuly(x,y,r,nd){
         y2:y-40,
         stroke:"black"
     });
-    vechu(x,y-43,"1.1.1.1");
+    vechu(x,y-43,stt);
     vechu(x,y+5,nd);
 }
 
