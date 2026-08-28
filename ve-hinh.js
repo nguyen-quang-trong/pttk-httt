@@ -1,4 +1,8 @@
-const svg=document.getElementById("hinh-ve");
+var svg;
+
+function layid(id){
+    svg=document.getElementById(id);
+}
 
 function taosvg(tag,thuoctinh){
     const phantu=document.createElementNS("http://www.w3.org/2000/svg",tag);
